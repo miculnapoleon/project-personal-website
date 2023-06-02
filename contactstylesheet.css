@@ -1,0 +1,49 @@
+.title {
+    width: 100%;
+    height: 200px;
+    /* color: whitesmoke; */
+}
+
+.form {
+    background-color: white;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 320px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+input[type=text],
+select {
+    width: 40%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=email] {
+    width: 40%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 40%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
