@@ -1,0 +1,7 @@
+justify content pe orizontala si primul atribut pe care il setez e width
+align items pe verticala si height
+dimensionez mereu elementele in pagina ca sa le pot misca
+un form are mereu tag de form si functia de onsubmit
+
+
+continuare cu remove values from fields la submit

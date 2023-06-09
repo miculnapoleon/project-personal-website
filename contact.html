@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-       <meta charset="utf-8">
-       <meta http-equiv="X-UA-Compatible" content="IE=edge">
-       <title>andreea's website</title>
-       <link href="contactstylesheet.css" rel="stylesheet"  >
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
-    <script src="main.js" type="application/javascript"></script>
-    <div class="form">
-        <div class="title"> Hi, leave me a message</div>
-        <label for="name">Name*</label>
-        <input type="text" id="name" placeholder="Your name"/>
-        <label for="email">Email*</label>
-        <input type="email" id="email" placeholder="Your email address"/>
-        <label for="reason">Reason*</label>
-        <select name="reason" id="reason">
-            <option value="Photography">Photography</option>
-            <option value="gig">Gig</option>
-            <option value="sell">Sale</option>
-          </select>
-          <input type="submit", value="submit"/>
-    </div>
-   </body>
-   </html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>andreea's website</title>
+    <link href="contactstylesheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <div class="menu">
+            <div class="menuItems">
+                <div class="itemsStyle">
+                    <div style="margin: 0 20px 0 0 ;">
+                        <a href="./index.html">About</a>
+                    </div>
+                    <div style="margin: 0 20px 0 0 ;">
+                        Portfolio
+                    </div>
+                </div>
+                <div class="contact active" href="./contact.html">
+                    Contact
+                </div>
+            </div>
+        </div>
+        <div class="formContainer">
+            <form class="form" id="formId" onsubmit="handleSubmit(event)">
+                <div class="title"> Hi, leave me a message</div>
+                <div class="inputs">
+                    <label for="name">Name*</label>
+                    <input type="text" name="name" placeholder="Your name" />
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" placeholder="Your email address" />
+                    <label for="reason">Reason*</label>
+                    <select name="reason">
+                        <option value="selectreason">Select Reason</option>
+                        <option value="Photography">Photography</option>
+                        <option value="gig">Gig</option>
+                        <option value="sell">Sale</option>
+                    </select>
+                    <label for="reason">Message*</label>
+                    <textarea name="message" id="message" form="formId" maxlength="250" rows="5"
+                        placeholder="Please write a 250 character message"></textarea>
+                </div>
+                <div class="btn">
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+        </div>
+        <div class="footer" borders>
+            <a class="icon" href="https://www.behance.net/alexandratanase" target="_blank">
+                <i class="fa fa-behance"></i>
+            </a>
+            <a class="icon" href="https://500px.com/p/aaalexandra?view=photos" target="_blank">
+                <i class="fa fa-500px"></i>
+            </a>
+        </div>
+
+        <script src="main.js" type="application/javascript"></script>
+</body>
+
+</html>
